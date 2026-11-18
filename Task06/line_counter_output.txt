@@ -1,0 +1,3 @@
+1 MB | unbuffered=34952 lines 278.42 ms | buffered=34952 lines 5.40 ms
+10 MB | unbuffered=349525 lines 2347.62 ms | buffered=349525 lines 5.85 ms
+50 MB | unbuffered=1747626 lines 11968.46 ms | buffered=1747626 lines 22.71 ms

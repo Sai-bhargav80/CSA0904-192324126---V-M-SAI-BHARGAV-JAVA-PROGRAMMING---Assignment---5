@@ -1,0 +1,4 @@
+1000 records | found=true | 9.547 ms
+10000 records | found=true | 24.590 ms
+50000 records | found=true | 58.908 ms
+100000 records | found=true | 44.355 ms

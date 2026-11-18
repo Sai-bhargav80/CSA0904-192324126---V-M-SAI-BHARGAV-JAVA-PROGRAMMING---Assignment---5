@@ -1,0 +1,4 @@
+rows,statement_ms,prepared_ms,batch_transaction_ms,notes
+1000,,,,Fill with measured MySQL results
+10000,,,,Fill with measured MySQL results
+100000,,,,Fill with measured MySQL results

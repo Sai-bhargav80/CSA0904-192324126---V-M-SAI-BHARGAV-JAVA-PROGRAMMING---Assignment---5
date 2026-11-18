@@ -1,0 +1,5 @@
+# B2 – Adversarial inputs and interpretation
+1. SQL injection test input: ID = `' OR '1'='1` and password = `wrong`. In an unsafe concatenated query the predicate can become true for every row; the prepared query treats the string as a literal ID and returns no row. Run `UnsafeVsSafeLogin` against the local test database.
+2. Damaged file examples are included in `damaged_passes.csv`: a two-field line, a non-numeric amount, an empty line, and one valid record. `PassStore` ignores invalid records rather than stopping the search.
+3. These tests show that SQL text concatenation confuses code and data, while weak file validation can cause parsing exceptions or incorrect records. Prepared statements and strict field/type validation reduce those risks.
+4. Escaping quotes or regex validation is weaker: it is easy to miss encodings, database-specific syntax and edge cases. Parameter binding is handled by the JDBC driver. Validation itself is O(L) in input length; PreparedStatement binding is also O(L) for values, but avoids SQL parsing ambiguity.
